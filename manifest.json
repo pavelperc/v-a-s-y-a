@@ -1,0 +1,13 @@
+{
+  "name": "v-a-s-y-a",
+  "description": "Removes timestamps and new lines when copy jenkins logs.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["activeTab", "scripting", "contextMenus", "clipboardWrite"],
+  "icons": {
+    "128": "jenkins.png"
+  }
+}
