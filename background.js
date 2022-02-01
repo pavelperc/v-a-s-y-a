@@ -19,11 +19,6 @@ chrome.contextMenus.onClicked.addListener(function(itemData, tab) {
       func: copy,
       args: [fixedSelection],
     });
-    // chrome.tabs.getCurrent(function(tab) {
-    //   copy("abc");
-    // });
-    // copy(itemData.selectionText.replace(/[a-k]/g, 'X'));
-
   }
 });
 
@@ -40,5 +35,4 @@ function copy(text) {
   ta.select();
   document.execCommand('copy');
   ta.remove();
-  console.log('copied abc');
 }
